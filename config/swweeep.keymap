@@ -62,7 +62,7 @@
         nav_layer {
             bindings = <
     &kp INSERT      &kp N1    &kp N2      &kp N3     &kp MINUS                                      &kp HOME     &kp PG_UP       &kp UP        &kp PG_DN      &kp COLON
-    &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END                                     &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS
+     &kp DELETE   &kp N4    &kp N5      &kp N6     &kp PLUS                                    &kp END     &kp LEFT       &kp DOWN      &kp RIGHT      &kp SEMI
     &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0
                                           &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT
             >;
