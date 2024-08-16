@@ -55,7 +55,7 @@
     &kp Q        &kp W        &kp E       &kp R         &lt NUMLFT T                                &lt NUMRHT Y  &kp U        &kp I         &kp O       &kp P
     &hs LSHIFT A   &hm LALT S   &hm LCTRL D  &hs LGUI F  &kp G                                       &kp H         &hm RGUI J &hm RCTRL K    &hm RALT L  &hs RSHIFT SQT
     &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH
-                                          &kp LSHIFT    &lt SYM TAB  &lt MOUSE SPACE  &lt MEDIA ENTER   &lt NAV BSPC &lt FUNC COPY
+                                          &kp LSHIFT    &lt SYM TAB  &lt MOUSE SPACE  &kp ENTER   &lt NAV BSPC &lt FUNC COPY
             >;
         };
 
