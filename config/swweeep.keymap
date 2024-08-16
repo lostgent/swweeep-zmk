@@ -9,7 +9,7 @@
 #define NAV     1
 #define SYM     2
 #define FUNC    3
-#define MEDIA   4
+#define MOUSE   4
 #define NUMLFT  5
 #define NUMRHT  6
 
@@ -55,7 +55,7 @@
     &kp Q        &kp W        &kp F       &kp P         &lt NUMLFT B                                &lt NUMRHT J  &kp L        &kp U         &kp Y       &kp SEMI
     &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O
     &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
-                                          &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
+                                          &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MOUSE BSPC   &lt SYM SPACE &kp SQT
             >;
         };
 
@@ -86,7 +86,7 @@
             >;
         };
 
-        media_layer {
+        mouse_layer {
             bindings = <
     &trans       &trans       &trans        &trans            &trans                                      &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans
     &trans       &trans       &trans        &trans            &trans                                      &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3
