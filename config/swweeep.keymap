@@ -9,7 +9,7 @@
 #define NAV     1
 #define SYM     2
 #define FUNC    3
-#define MEDIA   4
+#define MOUSE   4
 #define NUMLFT  5
 #define NUMRHT  6
 
@@ -55,25 +55,25 @@
     &kp Q        &kp W        &kp E       &kp R         &lt NUMLFT T                                &lt NUMRHT Y  &kp U        &kp I         &kp O       &kp P
     &hm LSHIFT A   &hm LALT S   &hm LCTRL D  &hm GUI F  &kp G                                       &kp H         &hm RGUI J &hm RCTRL K    &hm RALT L  &hm RSHIFT SQT
     &kp Z        &kp X        &kp C       &kp V         &kp V                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH
-                                          &kp DEL       &lt NAV TAB  &lt FUNC SPACE  &lt MEDIA ENTER   &lt SYM BSPC &kp SQT
+                                          &kp DEL       &lt SYM TAB  &lt MOUSE SPACE  &lt MEDIA ENTER   &lt NAV BSPC &kp SQT
             >;
         };
 
         nav_layer {
             bindings = <
-    &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS
-    &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END                                     &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS
-    &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0
-                                          &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT
+    &kp INSERT   &kp N1    &kp N2      &kp N3     &kp HOME                                    &kp HOME    &kp PG_UP      &kp UP        &kp PG_DN      &kp COLON
+    &kp DELETE   &kp N4    &kp N5      &kp N6     &kp END                                     &kp END     &jp LEFT       &kp DOWN      &kp RIGHT      &kp SEMI
+    &caps_word   &kp N7    &kp N8      &kp N9     &kp N0                                      &kptrans   &trans       &trans        &trans      &trans
+                                       &trans     &trans       &kp ESC       &trans           &trans     &trans
             >;
         };
 
         sym_layer {
             bindings = <
-    &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                                   &kp CARET     &kp AMPS          &kp ASTRK     &kp UNDER   &kp EQUAL
-    &kp MINUS    &kp LBKT     &kp LBRC        &kp LPAR         &kp LT                                      &kp GT        &kp RPAR          &kp RBRC      &kp RBKT    &kp PLUS
-    &kp CAPS     &kp GRAVE    &kp LC(LS(TAB)) &kp LC(LG(LEFT)) &caps_word                                  &trans        &kp LC(LG(RIGHT)) &kp LC(TAB)   &trans      &kp BSLH
-                                              &trans           &kp RET       &kp DEL        &kp BSPC       &trans        &trans
+    &trans       &kp LBKT     &kp LBRC        &kp RBRC         &trans                          &kp CARET     &kp LPAR          &kp RPAR     &kp RBKT   &kp TILDE
+    &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                       &kp ASTRK     &kp MINUS         &kp EQUAL    &kp BLSH   &kp GRAVE
+    &trans       &trans       &trans          &trans           &trans                          &kp AMPS      &kp UNDER         &kp PLUS     &kp PIPE   &trans
+                                              &trans           &trans       &trans        &trans       &trans        &trans
             >;
         };
 
@@ -86,12 +86,12 @@
             >;
         };
 
-        media_layer {
+        mouse_layer {
             bindings = <
-    &trans       &trans       &trans        &trans            &trans                                      &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans
-    &trans       &trans       &trans        &trans            &trans                                      &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3
-    &trans       &trans       &trans        &trans            &trans                                      &ext_power EP_TOG  &ext_power EP_ON  &ext_power EP_OFF  &out OUT_USB   &out OUT_BLE
-                                            &trans            &trans        &trans         &trans         &out OUT_BLE       &out OUT_USB
+    &trans       &trans       &trans        &trans            &trans                                      &trans         &msc SCRL_UP      &mmv MOVE_UP     &msc SCRL_DOWN    &trans
+    &trans       &trans       &trans        &trans            &trans                                      &trans         &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &trans
+    &trans       &trans       &trans        &trans            &trans                                      &trans         &msc SCRL_LEFT    &trans           &msc SCRL_RIGHT   &trans
+                                            &trans            &trans        &trans         &mkp MB1       &mkp MB2           &mkp MB3
             >;
         };
 
