@@ -12,6 +12,7 @@
 #define MOUSE   4
 #define NUMLFT  5
 #define NUMRHT  6
+#define COLEMAK 7
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -24,6 +25,10 @@
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp LC(Z)>;
+        combo_layershift {
+            timeout-ms = <50>;
+            key-positions = <28 29>
+            bindings = <&to 7>
         };
     };
 };
@@ -110,6 +115,14 @@
     &trans       &trans       &trans       &trans        &trans                                      &trans      &kp N4       &kp N5        &kp N6      &kp PLUS
     &trans       &trans       &trans       &trans        &trans                                      &trans      &kp N7       &kp N8        &kp N9      &kp N0
                                            &trans        &trans        &trans         &trans         &trans      &trans
+            >;
+        };
+         colemak_layer {
+            bindings = <
+    &kp Q        &kp W        &kp F       &kp P         &lt NUMRHT B                                &lt NUMLFT J  &kp L        &kp U         &kp Y       &kp SQT
+    &hs LSHIFT A   &hm LALT R   &hm LCTRL S  &hs LGUI T  &kp G                                       &kp M         &hm RGUI N &hm RCTRL E    &hm RALT I  &hs RSHIFT O
+    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
+                                          &to 0    &lt SYM TAB  &lt MOUSE SPACE  &kp ENTER   &lt NAV BSPC &lt FUNC C_MUTE
             >;
         };
     };
