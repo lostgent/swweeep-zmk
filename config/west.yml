@@ -8,6 +8,8 @@ manifest:
     #       ZMK main yet. Once it's merged, you no longer need this.
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: petejohanson
@@ -24,5 +26,8 @@ manifest:
       remote: sadekbaroudi
       revision: main
       import: config/deps.yml
+    - name: zmk-hid-trackball-interface
+      remote: englmaxi
+      revision: main
   self:
     path: config
