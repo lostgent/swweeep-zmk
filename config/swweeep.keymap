@@ -17,7 +17,12 @@
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
-
+&hid_trackball_interface {
+    automouse-layer = <1>;
+    automouse-layer-timeout-ms = <600>;
+    scroll-layers = <2>;
+    snipe-layers = <3>;
+};
 / {
     combos {
         compatible = "zmk,combos";
@@ -87,7 +92,7 @@
             >;
         };
 
-        mouse_layer {
+        automouse_layer {
             bindings = <
      &trans       &mkp MB3       &mkp MB2        &mkp MB1            &msc SCRL_UP                                      &msc SCRL_UP         &mkp MB1      &mkp MB2     &mkp MB3    &trans
     &trans       &trans       &msc SCRL_LEFT        &msc SCRL_RIGHT            &msc SCRL_DOWN                                      &msc SCRL_DOWN         &msc SCRL_LEFT    &msc SCRL_RIGHT   &trans   &trans
