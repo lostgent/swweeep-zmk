@@ -10,7 +10,7 @@
 #define NAV     1
 #define SYM     2
 #define FUNC    3
-#define MOUSE   4
+#define MOUSE 4
 #define NUMLFT  5
 #define NUMRHT  6
 
@@ -18,10 +18,10 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 &hid_trackball_interface {
-    automouse-layer = <1>;
+    automouse-layer = <4>;
     automouse-layer-timeout-ms = <600>;
-    scroll-layers = <2>;
-    snipe-layers = <3>;
+    scroll-layers = <7>;
+    snipe-layers = <8>;
 };
 / {
     combos {
@@ -92,7 +92,7 @@
             >;
         };
 
-        automouse_layer {
+        mouse_layer {
             bindings = <
      &trans       &mkp MB3       &mkp MB2        &mkp MB1            &msc SCRL_UP                                      &msc SCRL_UP         &mkp MB1      &mkp MB2     &mkp MB3    &trans
     &trans       &trans       &msc SCRL_LEFT        &msc SCRL_RIGHT            &msc SCRL_DOWN                                      &msc SCRL_DOWN         &msc SCRL_LEFT    &msc SCRL_RIGHT   &trans   &trans
