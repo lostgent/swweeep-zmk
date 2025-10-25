@@ -31,4 +31,3 @@
         transform = <&default_transform>;
     };
 };
-};
