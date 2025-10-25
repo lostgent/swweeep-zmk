@@ -10,11 +10,9 @@
 include:
    - board: nice!nano v2
      shield: swweeep_left nice_view_adapter  nice_view
-     snippet: zmk-usb-logging
    - board: nice!nano v2 
      shield: swweeep_right nice_view_adapter nice_view
    - board: nice!nano v2 
      shield: swweeep_dongle
-     snippet: zmk-usb-logging
    - board: nice!nano v2
      shield: settings_reset
